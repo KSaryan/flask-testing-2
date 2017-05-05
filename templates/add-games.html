@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Add Games!{% endblock %}
+
+{% block content %}
+<h2>Add a Game</h2>
+
+<form name='add_games' action='/add_game' method='POST'>
+  Name: <input type='text' name='name'> </input><br><br>
+  Description: <input type='text' name='description'></input>
+  <input type="submit">
+</form>  
+
+{% endblock %}
